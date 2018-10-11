@@ -16,7 +16,9 @@ namespace ListViewExample
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             //SetContentView(Resource.Layout.activity_main);
-            ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleExpandableListItem1, countries);
+            //ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, countries);
+
+            ListAdapter = new CustomAdapter(this, countries);
 
 
         }

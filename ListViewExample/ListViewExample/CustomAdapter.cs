@@ -29,16 +29,21 @@ namespace ListViewExample
         }
         //public override string this[int position] => throw new NotImplementedException();
 
-        public override int Count => throw new NotImplementedException();
+        public override int Count { get { return items.Length; } }
 
         public override long GetItemId(int position)
         {
-            throw new NotImplementedException();
+            return position;
         }
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            throw new NotImplementedException();
+            View view = convertView;
+            if (view == null)
+                view = context.LayoutInflater.Inflate(Android.Resource.Layout.CustomRow, null);
+
+            view.FindViewById<TextView>(Android.Resource.Id.textView1).Text = items[position];
+            return view;
         }
     }
 }

@@ -3,5 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>myphone</SelectedDevice>
     <DefaultDevice>myphone</DefaultDevice>
+    <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

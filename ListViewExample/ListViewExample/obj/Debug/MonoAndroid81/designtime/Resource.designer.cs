@@ -2875,6 +2875,9 @@ namespace ListViewExample
 			// aapt resource value: 0x7F010002
 			public const int activity_main = 2130771970;
 			
+			// aapt resource value: 0x7F010003
+			public const int CustomRow = 2130771971;
+			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
 			
